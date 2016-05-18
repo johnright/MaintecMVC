@@ -1,0 +1,7 @@
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\MaintecLaser.Business.dll
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\MaintecLaser.Business.pdb
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\MaintecLaser.Common.dll
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\MaintecLaser.Common.pdb
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\obj\Debug\MaintecLaser.Business.csprojResolveAssemblyReference.cache
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\obj\Debug\MaintecLaser.Business.dll
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\obj\Debug\MaintecLaser.Business.pdb

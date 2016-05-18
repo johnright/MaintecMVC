@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaintecLaser.StoreManagerWeb", "MaintecLaser.StoreManagerWeb\MaintecLaser.StoreManagerWeb.csproj", "{65D75532-CB28-4F94-AF31-6DD91F67BE22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaintecLaser.Common", "MaintecLaser.Common\MaintecLaser.Common.csproj", "{BB22BC86-DA90-4D26-9025-76B09C942398}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaintecLaser.Business", "MaintecLaser.Business\MaintecLaser.Business.csproj", "{4B0725B6-3A22-4043-BBB3-30B7C66D501E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65D75532-CB28-4F94-AF31-6DD91F67BE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D75532-CB28-4F94-AF31-6DD91F67BE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D75532-CB28-4F94-AF31-6DD91F67BE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D75532-CB28-4F94-AF31-6DD91F67BE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB22BC86-DA90-4D26-9025-76B09C942398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB22BC86-DA90-4D26-9025-76B09C942398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB22BC86-DA90-4D26-9025-76B09C942398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB22BC86-DA90-4D26-9025-76B09C942398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0725B6-3A22-4043-BBB3-30B7C66D501E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0725B6-3A22-4043-BBB3-30B7C66D501E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0725B6-3A22-4043-BBB3-30B7C66D501E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0725B6-3A22-4043-BBB3-30B7C66D501E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
