@@ -12,9 +12,20 @@ namespace MaintecLaser.StoreManagerWeb.Controllers
         // GET: Orders
         public ActionResult Index()
         {
-            List<Person> p = new List<Person>();
-            p.Add(new Person() {Name="Giacomo",Surname="Uncino",Email="giacomo.uncino@gmail.com" });
-            return View(p);
+            //List<Person> p =
+            return View(new UserProvider().GetAll());
         }
+
+        [HttpPost]
+        public ActionResult Index(User user)
+        {
+            UserProvider provider = new UserProvider();
+            provider.Insert(user);
+
+            return Index();
+
+        }
+
+
     }
 }

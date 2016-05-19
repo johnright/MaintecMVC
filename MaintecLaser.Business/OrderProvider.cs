@@ -38,5 +38,11 @@ namespace MaintecLaser.Business
         {
             throw new NotImplementedException();
         }
+
+
+        public IList<Order> GetOrders(User user)
+        {
+            return this.GetAll().Where(x => x.User.ID.Equals(user.ID)).ToList();
+        }
     }
 }

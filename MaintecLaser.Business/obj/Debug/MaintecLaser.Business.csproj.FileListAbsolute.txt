@@ -5,3 +5,10 @@ C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\obj\Debug\MaintecLaser.Business.csprojResolveAssemblyReference.cache
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\obj\Debug\MaintecLaser.Business.dll
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\obj\Debug\MaintecLaser.Business.pdb
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\DbStoreManager.mdf
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\DbStoreManager_log.ldf
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\MaintecLaser.Business.dll.config
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\EntityFramework.dll
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\EntityFramework.xml
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Business\bin\Debug\EntityFramework.SqlServer.xml

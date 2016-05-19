@@ -1,18 +1,25 @@
 ﻿@{
-    Layout = null;
-    
+    Layout = "~/Views/_MasterLayout.cshtml";
+
 }
-@model IList<MaintecLaser.Common.Person>
-    <!DOCTYPE html>
+@model IList<MaintecLaser.Common.User>
+  
+@*@foreach (var item in Model)
+{
+    @Html.Partial("_UserList", item);
+}*@
+           
+           
+            @using(Html.BeginForm())
+            {
+                var usr = new MaintecLaser.Common.User();
+                <fieldset>
+                    <table>
+                        <tr><td>Nome:</td><td>@Html.TextBox("Name", usr.Name)</td></tr>
+                        <tr><td>Cognome:</td><td>@Html.TextBox("Surname", usr.Surname)</td></tr>
+                        <tr><td>Email:</td><td>@Html.TextBox("Email", usr.Email)</td></tr>
+                    </table>
+                    <input type="submit" value="Upload" />
+                </fieldset>
+            }
 
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width" />
-        <title</title>
-    </head>
-    <body>
-        <div>
-
-        </div>
-    </body>
-</html>

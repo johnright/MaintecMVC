@@ -13,5 +13,7 @@ namespace MaintecLaser.StoreManagerWeb.Controllers
         {
             return View();
         }
+
+       // public ActionResult 
     }
 }

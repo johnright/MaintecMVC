@@ -48,3 +48,7 @@ C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.StoreManagerWeb\bin
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.StoreManagerWeb\bin\MaintecLaser.Common.dll
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.StoreManagerWeb\bin\MaintecLaser.Business.pdb
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.StoreManagerWeb\bin\MaintecLaser.Common.pdb
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.StoreManagerWeb\bin\DbStoreManager.mdf
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.StoreManagerWeb\bin\DbStoreManager_log.ldf
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.StoreManagerWeb\bin\EntityFramework.dll
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.StoreManagerWeb\bin\EntityFramework.xml

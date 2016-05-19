@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @*<meta name="viewport" content="width=device-width, initial-scale=1">*@
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        /* .card-pr{box-shadow:2px 2px 2px #ccc;border-radius:3px;width:80%;margin:0px auto 0 auto;border:1px solid #ccc;}
+        .card-pr .img-container{float:left;width:200px;height:200px;}
+        .card-detail {width:100%;float:left;
+        }
+           */
+        body {
+            color: #bbb;
+            height: 100%;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .img-container {
+            text-align: center;
+        }
+
+            .img-container img {
+                width: 150px;
+                height: 150px;
+            }
+
+        .row-cust {
+            box-shadow: 2px 2px 2px #ccc;
+            border-radius: 13px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            padding: 4px 7px 2px 4px;
+        }
+
+        .top-head {
+            background-color: #3781AC;
+            height: 50px;
+            box-shadow: 2px 3px 2px #ccc;
+            margin-bottom:5px;
+            opacity:0.6;
+           
+            
+        }
+
+        .container-cust {
+            padding-left: 0px;
+            margin-left: 0px;
+            margin-right:0px !important;
+            height: 100%;
+            
+        }
+
+        .left-panel {
+            height: 100% !important;
+            padding:0px;
+             /*box-shadow: 5px 0px 5px #888888;*/
+              margin-top:-55px;
+              margin-bottom:-9999px;
+            padding-bottom:9999px;
+            overflow:hidden;
+        }
+
+        .lista {
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            padding-left:0px;
+            margin-left:0px;
+           
+        }
+
+            .lista li {
+                list-style: none;
+                height: 50px;
+                padding: 0px;
+                padding-top:0px;
+                border-bottom:1px solid #666;
+            }
+
+
+                .lista li > a {
+                    display: block;
+                    padding-left: 30px;
+                    color: white;
+                    height: 50px;
+                    text-decoration: none;
+                    padding-top:15px;
+                    text-transform:capitalize;
+                    font-weight:normal;
+                }
+
+
+                    .lista a:hover {
+                        border-left:5px solid #3289C8;
+                       background-color:#EEEEEE;
+                       color:#3A3A3A;
+                    }
+
+
+
+        .infbox {
+        padding:20px 20px 20px 20px;
+        min-height:100px;
+        min-width:200px;
+        text-align:center;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+       
+        }
+
+        .success {
+             background-color:#00A300;
+        }
+         .danger {
+             background-color:#FE402A;
+        }
+          .alert {
+             background-color:#FFC540;
+        }
+            .info {
+             background-color:#4CD4FC;
+        }
+          
+    </style>
+
+</head>
+<body>
+    <div class="top-head"></div>
+    <div class="content container-cust">
+        
+            <div class="col-md-2 left-panel" style="background-color:#3A3A3A">
+                <div style="background-color:#1A1A1A;height:50px;border-bottom:1px solid #373737;text-align:center"><h2>ML Manager</h2></div>
+                <ul class="lista">
+                    <li><a href="#">Clienti</a></li>
+                    <li><a href="#">Prodotti</a></li>
+                    <li><a href="#">Ordini</a></li>
+                    <li><a href="#">Fornitori</a></li>
+                    <li><a href="#">Utenti</a></li>
+                    <li><a href="#">Admin</a></li>
+                </ul>
+            
+        </div>
+        <div class="col-md-10">
+            <div style="padding-left:10px;">
+
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

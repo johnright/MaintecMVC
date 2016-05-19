@@ -9,14 +9,29 @@ namespace MaintecLaser.Business
 {
     public class UserProvider : IService<User>
     {
+        public  StoreManagerModel DbContext;
+
+
+        public UserProvider()
+        {
+
+           
+
+        }
+
         public void Delete(User item)
         {
-            throw new NotImplementedException();
+
+
         }
 
         public IList<User> GetAll()
         {
-            throw new NotImplementedException();
+            using (DbContext = new StoreManagerModel())
+            {
+                return DbContext.Users.ToList();
+            }
+
         }
 
         public IList<User> GetAll(int nPages)
@@ -31,12 +46,24 @@ namespace MaintecLaser.Business
 
         public void Insert(User item)
         {
-            throw new NotImplementedException();
+            using (DbContext = new StoreManagerModel())
+            {
+                item.ID = Guid.NewGuid().ToString();
+                DbContext.Users.Add(item);
+                DbContext.SaveChanges();
+            }
+            
         }
 
         public void Update(User item)
         {
             throw new NotImplementedException();
+        }
+
+        public User GetUserDetails(string userId)
+        {
+            return this.GetAll().Where(x => x.ID == userId).FirstOrDefault();
+
         }
     }
 }
