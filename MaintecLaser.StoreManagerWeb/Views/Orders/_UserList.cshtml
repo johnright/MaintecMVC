@@ -1,25 +1,54 @@
-﻿@model MaintecLaser.Common.User
+﻿@model IList<MaintecLaser.Common.User>
+ <div class="row hidden-xs grid-header">
+    <div class="col-md-1">
+        <div  class="col-md-10 col-xs-12" ></div>
 
 
-<div class="row row-cust">
-    <div class="">
-        <div class="img-container span-4">
-            <img src="http://images.iimg.in/c/569f4771c45d324bda8b4660-4-501-0-1453279096/google/user-icon-png-pnglogocom.img?crop=1" />
-        </div>
-        <div class="span-4" style="margin-top:20px;">
-            <div class="list-group">
-                <div class="list-group-item">@Model.Name</div>
-                <div class="list-group-item">@Model.Surname</div>
-                <div class="list-group-item">@Model.Email</div>
-                <div class="list-group-item">@Model.UserType</div>
-            </div>
-            <div class="row" style="font-size:16px;margin-left:2px;">
-                <div class="col-md-3">Guadagni Personali:<b>@Model.Gain &euro;</b></div>
-                <div class="col-md-3">Vendite:<b>@Model.Sales &euro;</b></div>
-                
-            </div>
-        </div>
-        @*<div class="span-4"><a href=""><span class="glyphicon glyphicon-remove"></span></a></div>*@
     </div>
+    <div class="col-xs-12 col-md-1">
+        <label>Nome</label>
+    </div>
+    <div class="col-xs-12 col-md-2">
+        <label>Cognome</label>
+    </div>
+    <div class="col-xs-12 col-md-2">
+        <label>Email</label>
+    </div>
+    <div class="col-xs-12 col-md-2">
+        <label>Telefono</label>
+    </div>
+
 </div>
-<div style="clear:both"></div>
+  @foreach (var item in Model)
+    {
+        <div class="row usr-list">
+                <div class="col-md-1">
+                    <img src="http://images.iimg.in/c/569f4771c45d324bda8b4660-4-501-0-1453279096/google/user-icon-png-pnglogocom.img?crop=1" class="col-md-10 col-xs-12" />
+
+
+                </div>
+                <div class="col-xs-12 col-md-1">
+                    <label>@item.Name</label>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <label>@item.Surname</label>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <label>@item.Email</label>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <label>@item.PhoneNumber</label>
+                </div>
+                <div class="col-xs-12 col-md-1">
+                    <a href="#"> <span class="glyphicon glyphicon-paperclip"></span></a>
+
+
+                    <a href="#" style="color:red"> <span class="glyphicon glyphicon-trash"></span></a>
+
+
+                </div>
+
+        </div>
+    }
+
+

@@ -7,16 +7,23 @@ using System.Threading.Tasks;
 
 namespace MaintecLaser.Business
 {
-    public class OrderProvider : IService<Order>
+    public class OrderProvider : BaseProvider, IService<Order>
     {
+        //private static StoreManagerModel DbContext = new StoreManagerModel();
+
+
+       
+
         public void Delete(Order item)
         {
-            throw new NotImplementedException();
+            DbContext.Orders.Remove(item);
+
+            SaveChanges(true);
         }
 
         public IList<Order> GetAll()
         {
-            throw new NotImplementedException();
+            return DbContext.Orders.ToList();
         }
 
         public IList<Order> GetAll(int nPages)
@@ -24,19 +31,24 @@ namespace MaintecLaser.Business
             throw new NotImplementedException();
         }
 
-        public Order GetEntity(int id)
+        public Order GetEntity(string id)
         {
-            throw new NotImplementedException();
+            Order result = DbContext.Orders.Where(x => x.ID.Equals(id)).FirstOrDefault();
+            this.SaveChanges();
+            return result;
         }
 
         public void Insert(Order item)
         {
-            throw new NotImplementedException();
+            DbContext.Orders.Add(item);
+            SaveChanges(true);
         }
 
         public void Update(Order item)
         {
-            throw new NotImplementedException();
+            var upd = this.GetEntity(item.ID);
+            upd = item;
+            SaveChanges(true);
         }
 
 

@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseProvider.cs" />
     <Compile Include="CustomerProvider.cs" />
     <Compile Include="IService.cs" />
     <Compile Include="OrderProvider.cs" />

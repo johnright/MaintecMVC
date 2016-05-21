@@ -12,7 +12,7 @@ namespace MaintecLaser.StoreManagerWeb.Controllers
         // GET: Orders
         public ActionResult Index()
         {
-            //List<Person> p =
+            List<User> p = new List<User>();
             return View(new UserProvider().GetAll());
         }
 

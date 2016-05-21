@@ -1,0 +1,99 @@
+﻿@model MaintecLaser.Common.User
+
+@{
+    ViewBag.Title = "Nuovo Utnte";
+    Layout = "~/Views/_MasterLayout.cshtml";
+}
+
+<h2><span class="glyphicon glyphicon-user">&nbsp;</span>Nuovo Utente</h2>
+@Html.Action("GetUserList","User")
+
+@using(Html.BeginForm())
+{
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+
+        <hr />
+
+
+        <div class="form-group">
+            <label class="control-label col-md-1">Nome</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" }
+})
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-1">Cognome</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Surname, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Surname, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-1">Email</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-1" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control",@type="password" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-1">Telefono</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <label class="control-label col-md-1">Ruolo</label>
+            <div class="col-md-10">
+                @Html.EnumDropDownListFor(model => model.UserType, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.UserType, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-1">Attivo</label>
+            <div class="col-md-10">
+                <div class="onoffswitch">
+                    @Html.CheckBoxFor(Model => Model.IsActive,new Dictionary<string, object> { { "data-toggle", "toggle" },
+                   { "data-style","ios"} , { "data-on", " " }, {"data-off"," " } })
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+@*<div class="onoffswitch">
+    
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+    <label class="onoffswitch-label" for="myonoffswitch1"></label>
+</div>*@
+
+
+        <div class="form-group">
+            <div class="col-md-offset-1 col-md-10" style="text-align:end">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    
+}
+
+<div>
+ 
+</div>

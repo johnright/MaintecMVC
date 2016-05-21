@@ -13,6 +13,7 @@ namespace MaintecLaser.Common
         public double Sales { get; set; }
         public bool IsActive { get; set; }
         public UserType UserType { get; set; }
+       
     }
 
 

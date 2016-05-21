@@ -1,10 +1,10 @@
-C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\obj\Debug\MaintecLaser.Common.csprojResolveAssemblyReference.cache
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\bin\Debug\MaintecLaser.Common.dll.config
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\bin\Debug\MaintecLaser.Common.dll
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\bin\Debug\MaintecLaser.Common.pdb
-C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\obj\Debug\MaintecLaser.Common.dll
-C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\obj\Debug\MaintecLaser.Common.pdb
-C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\bin\Debug\MaintecLaser.Common.dll.config
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\bin\Debug\EntityFramework.dll
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\bin\Debug\EntityFramework.xml
 C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\obj\Debug\MaintecLaser.Common.dll
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\obj\Debug\MaintecLaser.Common.pdb
+C:\Users\Gianni\Progetti\Ml.MaintecLaserManager\MaintecLaser.Common\obj\Debug\MaintecLaser.Common.csprojResolveAssemblyReference.cache

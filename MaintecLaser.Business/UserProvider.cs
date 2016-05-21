@@ -7,27 +7,26 @@ using System.Threading.Tasks;
 
 namespace MaintecLaser.Business
 {
-    public class UserProvider : IService<User>
+    public class UserProvider : BaseProvider, IService<User>
     {
-        public  StoreManagerModel DbContext;
-
 
         public UserProvider()
         {
 
-           
+
 
         }
 
         public void Delete(User item)
         {
-
+            this.DbContext.Users.Remove(item);
+            SaveChanges(true);
 
         }
 
         public IList<User> GetAll()
         {
-            using (DbContext = new StoreManagerModel())
+            using (DbContext)
             {
                 return DbContext.Users.ToList();
             }
@@ -36,28 +35,40 @@ namespace MaintecLaser.Business
 
         public IList<User> GetAll(int nPages)
         {
-            throw new NotImplementedException();
+            using (DbContext)
+            {
+                return DbContext.Users.ToList().Take(nPages).ToList();
+            }
         }
 
-        public User GetEntity(int id)
+        public User GetEntity(string id)
         {
-            throw new NotImplementedException();
+            using (DbContext)
+            {
+                return DbContext.Users.ToList().Where(x => x.ID == id).FirstOrDefault();
+            }
         }
 
         public void Insert(User item)
         {
-            using (DbContext = new StoreManagerModel())
+            using (DbContext)
             {
                 item.ID = Guid.NewGuid().ToString();
                 DbContext.Users.Add(item);
                 DbContext.SaveChanges();
             }
-            
+
         }
 
         public void Update(User item)
         {
-            throw new NotImplementedException();
+            using (DbContext)
+            {
+
+                var _toUp = DbContext.Users.ToList().Where(x => x.ID == item.ID).FirstOrDefault();
+                _toUp = item;
+                DbContext.SaveChanges();
+            }
         }
 
         public User GetUserDetails(string userId)

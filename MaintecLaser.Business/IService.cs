@@ -14,6 +14,6 @@ namespace MaintecLaser.Business
         void Update(T item);
         IList<T> GetAll();
         IList<T> GetAll(int nPages);
-        T GetEntity(int id);
+        T GetEntity(string id);
     }
 }

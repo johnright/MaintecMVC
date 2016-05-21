@@ -11,6 +11,9 @@ namespace MaintecLaser.Common
 
         public string Piva { get; set; }
         public string BankAccount { get; set; }
+        public string WebSite { get; set; }
         public string Note { get; set; }
+        public Address Address { get; set; }
+
     }
 }

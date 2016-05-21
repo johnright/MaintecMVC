@@ -4,10 +4,10 @@
 }
 @model IList<MaintecLaser.Common.User>
   
-@*@foreach (var item in Model)
+@foreach (var item in Model)
 {
     @Html.Partial("_UserList", item);
-}*@
+}
            
            
             @using(Html.BeginForm())

@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 using MaintecLaser.Common;
 namespace MaintecLaser.Business
 {
-    public class CustomerProvider : IService<Customer>
+    public class CustomerProvider : BaseProvider, IService<Customer>
     {
+
         public void Delete(Customer item)
         {
-            throw new NotImplementedException();
+            this.DbContext.Customers.Remove(item);
+            this.SaveChanges(true);
         }
 
         public IList<Customer> GetAll()
         {
-            throw new NotImplementedException();
+            var _result = this.DbContext.Customers.ToList();
+            SaveChanges();
+            return _result;
         }
 
         public IList<Customer> GetAll(int nPages)
@@ -23,19 +27,24 @@ namespace MaintecLaser.Business
             throw new NotImplementedException();
         }
 
-        public Customer GetEntity(int id)
+        public Customer GetEntity(string id)
         {
-            throw new NotImplementedException();
+            var _result = this.DbContext.Customers.Where(x => x.ID == id).FirstOrDefault();
+            SaveChanges();
+            return _result;
         }
 
         public void Insert(Customer item)
         {
-            throw new NotImplementedException();
+            this.DbContext.Customers.Add(item);
+            SaveChanges(true);
         }
 
         public void Update(Customer item)
         {
-            throw new NotImplementedException();
+            var _toUp = this.DbContext.Customers.Where(x => x.ID == item.ID).FirstOrDefault();
+            _toUp = item;
+            SaveChanges(true);
         }
     }
 }

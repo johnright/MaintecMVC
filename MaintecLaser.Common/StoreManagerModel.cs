@@ -3,7 +3,7 @@ namespace MaintecLaser.Common
     using System;
     using System.Data.Entity;
     using System.Linq;
-
+    using SqlProviderServices = System.Data.Entity.SqlServer.SqlProviderServices;
     public class StoreManagerModel : DbContext
     {
         // Your context has been configured to use a 'StoreManagerModel' connection string from your application's 
@@ -26,7 +26,10 @@ namespace MaintecLaser.Common
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
-       // public virtual DbSet<OrderDetail> OrderDet { get; set; }
+        public virtual DbSet<Address> Addresses { get; set; }
+        public virtual DbSet<City> Cities { get; set; }
+        public virtual DbSet<StreetType> StreetTypes { get; set; }
+        // public virtual DbSet<OrderDetail> OrderDet { get; set; }
     }
 
     //public class MyEntity
